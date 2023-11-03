@@ -44,6 +44,7 @@
 		2BEC05102AF4732D0044D46F /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2BEC050F2AF4732D0044D46F /* FirebaseRemoteConfigSwift */; };
 		2BEC05122AF4732D0044D46F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2BEC05112AF4732D0044D46F /* FirebaseStorage */; };
 		2BEC05142AF4732D0044D46F /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2BEC05132AF4732D0044D46F /* FirebaseStorageCombine-Community */; };
+		2BEC05172AF4B2D40044D46F /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC05162AF4B2D40044D46F /* Loadable.swift */; };
 		2BEC7D8A2AF31A0400727652 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BEC7D892AF31A0400727652 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		2BEC04D62AF458CE0044D46F /* NewPostForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostForm.swift; sourceTree = "<group>"; };
 		2BEC04D92AF4627E0044D46F /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 		2BEC04DC2AF471B70044D46F /* PostsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRepository.swift; sourceTree = "<group>"; };
+		2BEC05162AF4B2D40044D46F /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		2BEC7D892AF31A0400727652 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 				2BEC04CD2AF32ECB0044D46F /* Views */,
 				2BEC04D82AF4611D0044D46F /* ViewModels */,
 				2BEC04DB2AF471740044D46F /* Repositories */,
+				2BEC05152AF4B2AD0044D46F /* Utilities */,
 				2BEC04CE2AF32EE20044D46F /* Resources */,
 			);
 			path = Socialcademy;
@@ -180,6 +183,14 @@
 				2BEC04DC2AF471B70044D46F /* PostsRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		2BEC05152AF4B2AD0044D46F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2BEC05162AF4B2D40044D46F /* Loadable.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +302,7 @@
 				2BEC04DD2AF471B70044D46F /* PostsRepository.swift in Sources */,
 				2BEC04DA2AF4627E0044D46F /* PostsViewModel.swift in Sources */,
 				2BEC04D52AF34A010044D46F /* PostRow.swift in Sources */,
+				2BEC05172AF4B2D40044D46F /* Loadable.swift in Sources */,
 				2BEC04D32AF3465B0044D46F /* PostsList.swift in Sources */,
 				2BEC04D72AF458CE0044D46F /* NewPostForm.swift in Sources */,
 			);
