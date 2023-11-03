@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0237EA2AF4C300008AE907 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0237E92AF4C300008AE907 /* EmptyListView.swift */; };
 		2B9F63262AF30DCC0099C1B8 /* SocialcademyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9F63252AF30DCC0099C1B8 /* SocialcademyApp.swift */; };
 		2B9F632A2AF30DCD0099C1B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9F63292AF30DCD0099C1B8 /* Assets.xcassets */; };
 		2B9F632D2AF30DCD0099C1B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9F632C2AF30DCD0099C1B8 /* Preview Assets.xcassets */; };
@@ -49,6 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B0237E92AF4C300008AE907 /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
 		2B9F63222AF30DCC0099C1B8 /* Socialcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Socialcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B9F63252AF30DCC0099C1B8 /* SocialcademyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialcademyApp.swift; sourceTree = "<group>"; };
 		2B9F63292AF30DCD0099C1B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B0237E82AF4C2E1008AE907 /* SupportViews */ = {
+			isa = PBXGroup;
+			children = (
+				2B0237E92AF4C300008AE907 /* EmptyListView.swift */,
+			);
+			path = SupportViews;
+			sourceTree = "<group>";
+		};
 		2B9F63192AF30DCC0099C1B8 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +134,7 @@
 			children = (
 				2B9F63252AF30DCC0099C1B8 /* SocialcademyApp.swift */,
 				2BEC04CF2AF331280044D46F /* Models */,
+				2B0237E82AF4C2E1008AE907 /* SupportViews */,
 				2BEC04CD2AF32ECB0044D46F /* Views */,
 				2BEC04D82AF4611D0044D46F /* ViewModels */,
 				2BEC04DB2AF471740044D46F /* Repositories */,
@@ -305,6 +316,7 @@
 				2BEC05172AF4B2D40044D46F /* Loadable.swift in Sources */,
 				2BEC04D32AF3465B0044D46F /* PostsList.swift in Sources */,
 				2BEC04D72AF458CE0044D46F /* NewPostForm.swift in Sources */,
+				2B0237EA2AF4C300008AE907 /* EmptyListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
