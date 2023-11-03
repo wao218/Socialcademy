@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B0237EA2AF4C300008AE907 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0237E92AF4C300008AE907 /* EmptyListView.swift */; };
+		2B7A1B722AF5B49C0070265E /* Alert+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7A1B712AF5B49C0070265E /* Alert+Error.swift */; };
 		2B9F63262AF30DCC0099C1B8 /* SocialcademyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9F63252AF30DCC0099C1B8 /* SocialcademyApp.swift */; };
 		2B9F632A2AF30DCD0099C1B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9F63292AF30DCD0099C1B8 /* Assets.xcassets */; };
 		2B9F632D2AF30DCD0099C1B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9F632C2AF30DCD0099C1B8 /* Preview Assets.xcassets */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		2B0237E92AF4C300008AE907 /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
+		2B7A1B712AF5B49C0070265E /* Alert+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+Error.swift"; sourceTree = "<group>"; };
 		2B9F63222AF30DCC0099C1B8 /* Socialcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Socialcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B9F63252AF30DCC0099C1B8 /* SocialcademyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialcademyApp.swift; sourceTree = "<group>"; };
 		2B9F63292AF30DCD0099C1B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				2B0237E92AF4C300008AE907 /* EmptyListView.swift */,
+				2B7A1B712AF5B49C0070265E /* Alert+Error.swift */,
 			);
 			path = SupportViews;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				2BEC04D52AF34A010044D46F /* PostRow.swift in Sources */,
 				2BEC05172AF4B2D40044D46F /* Loadable.swift in Sources */,
 				2BEC04D32AF3465B0044D46F /* PostsList.swift in Sources */,
+				2B7A1B722AF5B49C0070265E /* Alert+Error.swift in Sources */,
 				2BEC04D72AF458CE0044D46F /* NewPostForm.swift in Sources */,
 				2B0237EA2AF4C300008AE907 /* EmptyListView.swift in Sources */,
 			);
