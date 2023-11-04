@@ -21,7 +21,7 @@ struct PostsList: View {
                     ProgressView()
                 case let .error(error):
                     EmptyListView(title: "Cannot Load Posts", message: error.localizedDescription) {
-                        viewModel.fetchPosts()
+                        viewModel.fetchAllPosts()
                     }
                 case .empty:
                     EmptyListView(title: "No Posts", message: "There aren't any posts yet.")
@@ -48,7 +48,7 @@ struct PostsList: View {
             NewPostForm(createAction: viewModel.makeCreateAction())
         })
         .onAppear {
-            viewModel.fetchPosts()
+            viewModel.fetchAllPosts()
         }
     }
 }
