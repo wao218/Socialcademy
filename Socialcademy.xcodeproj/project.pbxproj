@@ -14,6 +14,7 @@
 		2B9F63262AF30DCC0099C1B8 /* SocialcademyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9F63252AF30DCC0099C1B8 /* SocialcademyApp.swift */; };
 		2B9F632A2AF30DCD0099C1B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9F63292AF30DCD0099C1B8 /* Assets.xcassets */; };
 		2B9F632D2AF30DCD0099C1B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9F632C2AF30DCD0099C1B8 /* Preview Assets.xcassets */; };
+		2BCCDCBD2AFA164400D079D3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCCDCBC2AFA164400D079D3 /* AuthService.swift */; };
 		2BEC04CB2AF32B850044D46F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2BEC04CA2AF32B850044D46F /* .gitignore */; };
 		2BEC04D12AF331460044D46F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC04D02AF331460044D46F /* Post.swift */; };
 		2BEC04D32AF3465B0044D46F /* PostsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC04D22AF3465B0044D46F /* PostsList.swift */; };
@@ -61,6 +62,7 @@
 		2B9F63252AF30DCC0099C1B8 /* SocialcademyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialcademyApp.swift; sourceTree = "<group>"; };
 		2B9F63292AF30DCD0099C1B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B9F632C2AF30DCD0099C1B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2BCCDCBC2AFA164400D079D3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		2BEC04CA2AF32B850044D46F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		2BEC04D02AF331460044D46F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		2BEC04D22AF3465B0044D46F /* PostsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsList.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				2BEC04CD2AF32ECB0044D46F /* Views */,
 				2BEC04D82AF4611D0044D46F /* ViewModels */,
 				2BEC04DB2AF471740044D46F /* Repositories */,
+				2BCCDCBB2AFA161C00D079D3 /* Services */,
 				2BEC05152AF4B2AD0044D46F /* Utilities */,
 				2BEC04CE2AF32EE20044D46F /* Resources */,
 			);
@@ -157,6 +160,14 @@
 				2B9F632C2AF30DCD0099C1B8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2BCCDCBB2AFA161C00D079D3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2BCCDCBC2AFA164400D079D3 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		2BEC04CD2AF32ECB0044D46F /* Views */ = {
@@ -323,6 +334,7 @@
 				2BEC04DD2AF471B70044D46F /* PostsRepository.swift in Sources */,
 				2BEC04DA2AF4627E0044D46F /* PostsViewModel.swift in Sources */,
 				2BEC04D52AF34A010044D46F /* PostRow.swift in Sources */,
+				2BCCDCBD2AFA164400D079D3 /* AuthService.swift in Sources */,
 				2BEC05172AF4B2D40044D46F /* Loadable.swift in Sources */,
 				2BEC04D32AF3465B0044D46F /* PostsList.swift in Sources */,
 				2B7A1B722AF5B49C0070265E /* Alert+Error.swift in Sources */,
