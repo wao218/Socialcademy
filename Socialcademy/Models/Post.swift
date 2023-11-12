@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Post: Identifiable, Equatable, Codable {
+struct Post: Identifiable, Equatable {
     var id = UUID()
     var title: String
     var content: String
@@ -20,6 +20,12 @@ struct Post: Identifiable, Equatable, Codable {
         let query = string.lowercased()
         let matches = properties.filter { $0.contains(query) }
         return !matches.isEmpty
+    }
+}
+
+extension Post: Codable {
+    enum CodingKeys: CodingKey {
+        case title, content, author, timestamp, id
     }
 }
 
