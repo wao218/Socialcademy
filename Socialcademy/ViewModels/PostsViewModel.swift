@@ -32,13 +32,6 @@ class PostsViewModel: ObservableObject {
         self.postsRepository = postsRepository
     }
     
-    func makeCreateAction() -> NewPostForm.CreateAction {
-        return { [weak self] post in
-            try await self?.postsRepository.create(post)
-            self?.posts.value?.insert(post, at: 0)
-        }
-    }
-    
     func fetchAllPosts() {
         Task {
             do {
@@ -65,6 +58,13 @@ class PostsViewModel: ObservableObject {
 
             }
         )
+    }
+    
+    func makeNewPostViewModel() -> FormViewModel<Post> {
+        return FormViewModel(initialValue: Post(title: "", content: "", author: postsRepository.user)) { [weak self] post in
+            try await self?.postsRepository.create(post)
+            self?.posts.value?.insert(post, at: 0)
+        }
     }
 }
 
