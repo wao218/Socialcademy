@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PostRow: View {
+    @EnvironmentObject private var factory: ViewModelFactory
     @ObservedObject var viewModel: PostRowViewModel
     @State private var showConfirmationDialog = false
     
@@ -29,6 +30,12 @@ struct PostRow: View {
                 FavoriteButton(isFavorite: viewModel.isFavorite, action: {
                     viewModel.favoritePost()
                 })
+                NavigationLink {
+                    CommentsList(viewModel: factory.makeCommentsViewModel(for: viewModel.post))
+                } label: {
+                    Label("Comments", systemImage: "text.bubble")
+                        .foregroundStyle(.secondary)
+                }
                 Spacer()
                 if viewModel.canDeletePost {
                     Button(role: .destructive, action: {
@@ -37,6 +44,7 @@ struct PostRow: View {
                         Label("Delete", systemImage: "trash")
                     }
                 }
+
             }
             .labelStyle(.iconOnly)
         }
@@ -86,9 +94,6 @@ private extension PostRow {
 }
 
 
-#Preview {
-    
+#Preview(traits: .sizeThatFitsLayout) {
     PostRow(viewModel: PostRowViewModel(post: Post.testPost, deleteAction: {}, favoriteAction: {}))
-        .previewLayout(.sizeThatFits)
-    
 }
