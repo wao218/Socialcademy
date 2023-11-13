@@ -30,7 +30,7 @@ struct CommentsList: View {
                 EmptyListView(title: "No Comments", message: "Be the first to leave a comment.")
             case let .loaded(comments):
                 List(comments) { comment in
-                    CommentRow(comment: comment)
+                    CommentRow(viewModel: viewModel.makeCommentRowViewModel(for: comment))
                 }
                 
                 .animation(.default, value: comments)

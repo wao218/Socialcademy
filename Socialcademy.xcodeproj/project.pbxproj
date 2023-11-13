@@ -64,6 +64,8 @@
 		2BEC05142AF4732D0044D46F /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2BEC05132AF4732D0044D46F /* FirebaseStorageCombine-Community */; };
 		2BEC05172AF4B2D40044D46F /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC05162AF4B2D40044D46F /* Loadable.swift */; };
 		2BEC7D8A2AF31A0400727652 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BEC7D892AF31A0400727652 /* GoogleService-Info.plist */; };
+		2BFF6DD62B01B216009E959B /* CommentRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF6DD52B01B216009E959B /* CommentRowViewModel.swift */; };
+		2BFF6DD82B01B3C4009E959B /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF6DD72B01B3C4009E959B /* ErrorHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +100,8 @@
 		2BEC04DC2AF471B70044D46F /* PostsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRepository.swift; sourceTree = "<group>"; };
 		2BEC05162AF4B2D40044D46F /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		2BEC7D892AF31A0400727652 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2BFF6DD52B01B216009E959B /* CommentRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRowViewModel.swift; sourceTree = "<group>"; };
+		2BFF6DD72B01B3C4009E959B /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +245,7 @@
 				2B7F91502AFDDB6400FD93AD /* FormViewModel.swift */,
 				2B35DA4D2AFEAEF500F8BBFA /* ViewModelFactory.swift */,
 				2B35DA552B01979000F8BBFA /* CommentsViewModel.swift */,
+				2BFF6DD52B01B216009E959B /* CommentRowViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 			children = (
 				2BEC05162AF4B2D40044D46F /* Loadable.swift */,
 				2B35DA532B01481000F8BBFA /* Firestore+Extensions.swift */,
+				2BFF6DD72B01B3C4009E959B /* ErrorHandler.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -368,9 +374,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B7F91532AFDEA5A00FD93AD /* PrimaryButtonStyle.swift in Sources */,
+				2BFF6DD82B01B3C4009E959B /* ErrorHandler.swift in Sources */,
 				2B35DA522B01402700F8BBFA /* CommentsRepository.swift in Sources */,
 				2B7A1B742AF6D0410070265E /* PostRowViewModel.swift in Sources */,
 				2BEC04D12AF331460044D46F /* Post.swift in Sources */,
+				2BFF6DD62B01B216009E959B /* CommentRowViewModel.swift in Sources */,
 				2B35DA5A2B019EA500F8BBFA /* CommentRow.swift in Sources */,
 				2B9F63262AF30DCC0099C1B8 /* SocialcademyApp.swift in Sources */,
 				2BEC04DD2AF471B70044D46F /* PostsRepository.swift in Sources */,
