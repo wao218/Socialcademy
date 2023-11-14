@@ -82,6 +82,7 @@
 		2B35DA552B01979000F8BBFA /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
 		2B35DA572B019ADB00F8BBFA /* CommentsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsList.swift; sourceTree = "<group>"; };
 		2B35DA592B019EA500F8BBFA /* CommentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRow.swift; sourceTree = "<group>"; };
+		2B62CCF12B041B5900837A4C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2B7A1B712AF5B49C0070265E /* Alert+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+Error.swift"; sourceTree = "<group>"; };
 		2B7A1B732AF6D0410070265E /* PostRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowViewModel.swift; sourceTree = "<group>"; };
 		2B7A1B752AF889480070265E /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -165,6 +166,7 @@
 		2B9F63192AF30DCC0099C1B8 = {
 			isa = PBXGroup;
 			children = (
+				2B62CCF12B041B5900837A4C /* README.md */,
 				2BEC04CA2AF32B850044D46F /* .gitignore */,
 				2B9F63242AF30DCC0099C1B8 /* Socialcademy */,
 				2B9F63232AF30DCC0099C1B8 /* Products */,
