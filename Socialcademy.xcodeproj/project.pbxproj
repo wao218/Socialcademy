@@ -66,6 +66,7 @@
 		2BEC7D8A2AF31A0400727652 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BEC7D892AF31A0400727652 /* GoogleService-Info.plist */; };
 		2BFF6DD62B01B216009E959B /* CommentRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF6DD52B01B216009E959B /* CommentRowViewModel.swift */; };
 		2BFF6DD82B01B3C4009E959B /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF6DD72B01B3C4009E959B /* ErrorHandler.swift */; };
+		2BFF6DF62B02EA94009E959B /* StorageFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF6DF52B02EA94009E959B /* StorageFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +103,7 @@
 		2BEC7D892AF31A0400727652 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2BFF6DD52B01B216009E959B /* CommentRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRowViewModel.swift; sourceTree = "<group>"; };
 		2BFF6DD72B01B3C4009E959B /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		2BFF6DF52B02EA94009E959B /* StorageFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +267,7 @@
 				2BEC05162AF4B2D40044D46F /* Loadable.swift */,
 				2B35DA532B01481000F8BBFA /* Firestore+Extensions.swift */,
 				2BFF6DD72B01B3C4009E959B /* ErrorHandler.swift */,
+				2BFF6DF52B02EA94009E959B /* StorageFile.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				2BCCDCBD2AFA164400D079D3 /* AuthService.swift in Sources */,
 				2B35DA582B019ADB00F8BBFA /* CommentsList.swift in Sources */,
 				2BEC05172AF4B2D40044D46F /* Loadable.swift in Sources */,
+				2BFF6DF62B02EA94009E959B /* StorageFile.swift in Sources */,
 				2BCCDCC32AFD92AE00D079D3 /* ProfileView.swift in Sources */,
 				2B35DA502B013E8700F8BBFA /* Comment.swift in Sources */,
 				2B35DA562B01979000F8BBFA /* CommentsViewModel.swift in Sources */,
