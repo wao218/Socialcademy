@@ -22,6 +22,9 @@ struct PostRow: View {
                     .font(.caption)
             }
             .foregroundStyle(.gray)
+            if let imageURL = viewModel.imageURL {
+                PostImage(url: imageURL)
+            }
             Text(viewModel.title)
                 .font(.title3)
                 .fontWeight(.semibold)
@@ -75,7 +78,9 @@ private extension PostRow {
             .animation(.default, value: isFavorite)
         }
     }
-    
+}
+
+private extension PostRow {
     struct AuthorView: View {
         let author: User
         
@@ -89,6 +94,24 @@ private extension PostRow {
                     .font(.subheadline)
                     .fontWeight(.medium)
             }
+        }
+    }
+}
+
+private extension PostRow {
+    struct PostImage: View {
+        let url: URL
+        
+        var body: some View {
+            AsyncImage(url: url) { image in
+                image
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+            } placeholder: {
+                Color.clear
+            }
+
         }
     }
 }

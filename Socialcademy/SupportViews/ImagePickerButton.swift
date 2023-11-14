@@ -15,22 +15,22 @@ struct ImagePickerButton<Label: View>: View {
     @State private var sourceType: UIImagePickerController.SourceType?
     
     var body: some View {
-        Button(action:{
+        Button(action: {
             showImageSourceDialog = true
         }) {
             label()
         }
         .confirmationDialog("Choose Image", isPresented: $showImageSourceDialog) {
-            Button("Choose from Library") {
+            Button("Choose from Library", action: {
                 sourceType = .photoLibrary
-            }
-            Button("Take Photo") {
+            })
+            Button("Take Photo", action: {
                 sourceType = .camera
-            }
+            })
             if imageURL != nil {
-                Button("Remove Photo", role: .destructive) {
+                Button("Remove Photo", role: .destructive, action: {
                     imageURL = nil
-                }
+                })
             }
         }
         .fullScreenCover(item: $sourceType) { sourceType in
@@ -63,16 +63,46 @@ private extension ImagePickerButton {
         
         func updateUIViewController(_ imagePicker: UIImagePickerController, context: Context) {}
     }
-    
+}
+
+private extension ImagePickerButton {
     class ImagePickerCoordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
         let view: ImagePickerView
+        var selectedImage: UIImage!
+        var imageURL: URL!
         
         init(view: ImagePickerView) {
             self.view = view
         }
         
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-            guard let imageURL = info[.imageURL] as? URL else { return }
+            
+            // Solution: https://stackoverflow.com/questions/64045380/swiftui-image-picker-url-image-from-camera
+            // https://discuss.codecademy.com/t/socialcademy-unable-to-click-use-photo/672920/4
+            
+            if let image = info[.editedImage] as? UIImage {
+                selectedImage = image
+            } else if let image = info[.originalImage] as? UIImage {
+                selectedImage = image
+            }
+            
+            if picker.sourceType == .camera {
+                let imgName = "\(UUID().uuidString).jpeg"
+                let documentDirectory = NSTemporaryDirectory()
+                let localPath = documentDirectory.appending(imgName)
+                
+                let data = selectedImage.jpegData(compressionQuality: 0.3)! as NSData
+                data.write(toFile: localPath, atomically: true)
+                imageURL = URL.init(fileURLWithPath: localPath)
+                
+            } else if let selectedImageURL = info[.imageURL] as? URL {
+                imageURL = selectedImageURL
+            } else {
+                return
+            }
+            
+            // this doesn't take into account the camera doesn't have a imageURL
+            //            guard let imageURL = info[.imageURL] as? URL else { return }
             view.onSelect(imageURL)
             view.dismiss()
         }
@@ -83,6 +113,8 @@ extension UIImagePickerController.SourceType: Identifiable {
     public var id: String { "\(self)" }
 }
 
-//#Preview {
-//    ImagePickerButton()
-//}
+#Preview {
+    ImagePickerButton(imageURL: .constant(nil)) {
+        Label("Choose Image", systemImage: "photo.fill")
+    }
+}
