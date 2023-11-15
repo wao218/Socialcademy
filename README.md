@@ -5,7 +5,7 @@ https://github.com/wao218/Socialcademy/assets/8582060/02cf87b2-df4d-443d-8fea-8c
 
 
 ## Description
-Socialcademy is a simplified social networking app. Users can create an account, share and like posts. This app is built with SwiftUI and Firebase.
+Socialcademy is a simplified social networking app. Users can create an account, share, comment on, and like posts. This app is built with SwiftUI and Firebase.
 
 ## Features
 * User Authentication / Sign Up / Sign In
